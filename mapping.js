@@ -13,9 +13,9 @@ for (let k in positions) {
   ckbx.id = `ck-${k}`
   h2.textContent = positions[k].name
   // p.textContent = positions[k].category
+  li.appendChild(ckbx)
   li.appendChild(h2)
   // li.appendChild(p)
-  li.appendChild(ckbx)
   wrapper.appendChild(li)
 }
 
