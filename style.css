@@ -30,8 +30,13 @@ input[type="checkbox"] {
   margin: 0;
 }
 
+li.on {
+  background-color: rgb(10, 10, 110);
+  color: rgba(255, 255, 255, 0.2);
+}
+
 input[type="checkbox"].on {
-  background-color: #f0f;  
+  background-color: rgb(10, 10, 220);
 }
 
 li {

@@ -18,16 +18,19 @@ for (let k in positions) {
       localStorage.setItem(`position_${k}`, true)
       ckbx.checked = 'checked'
       ckbx.className = 'on'
+      li.className = 'on'
     } else {
       localStorage.removeItem(`position_${k}`)
       ckbx.checked = ''
       ckbx.className = ''
+      li.className = ''
     }
   }
   
   if (!!localStorage.getItem(`position_${k}`)) {
     ckbx.checked = 'checked'
     ckbx.className = 'on'
+    li.className = 'on'
   }
   h2.textContent = positions[k].name
   // p.textContent = positions[k].category
