@@ -30,7 +30,9 @@ input[type="checkbox"] {
   margin: 0;
 }
 
-input[type="checked"
+input[type="checkbox"].on {
+  background-color: #f0f;  
+}
 
 li {
   padding: 1px;

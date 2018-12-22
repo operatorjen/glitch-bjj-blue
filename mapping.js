@@ -11,6 +11,24 @@ for (let k in positions) {
   // let p = document.createElement('p')
   ckbx.type = 'checkbox'
   ckbx.id = `ck-${k}`
+  ckbx.onclick = function (e) {
+    const checked = e.target.checked || false
+    
+    if (checked) {
+      localStorage.setItem(`position_${k}`, true)
+      ckbx.checked = 'checked'
+      ckbx.className = 'on'
+    } else {
+      localStorage.removeItem(`position_${k}`)
+      ckbx.checked = ''
+      ckbx.className = ''
+    }
+  }
+  
+  if (!!localStorage.getItem(`position_${k}`)) {
+    ckbx.checked = 'checked'
+    ckbx.className = 'on'
+  }
   h2.textContent = positions[k].name
   // p.textContent = positions[k].category
   li.appendChild(ckbx)
@@ -20,19 +38,3 @@ for (let k in positions) {
 }
 
 const checks = document.querySelectorAll('input[type="checkbox"]')
-
-for (let i = 0; i < checks.length; i++) {
-  checks[i].onclick = function (e) {
-    const checked = e.target.checked || false
-    
-    if (checked) {
-      localStorage.setItem(`position_${i}`, true)
-    } else {
-      localStorage.removeItem(`position_${i}`)
-    }
-  }
-  
-  if (!!localStorage.getItem(`position_${i}`)) {
-    checks[i].checked = 'checked'
-  }
-}
