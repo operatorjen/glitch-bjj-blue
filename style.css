@@ -1,11 +1,29 @@
-/* CSS files add styling rules to your content */
-
 body {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
+  padding: 10px;
+  margin: 0;
+  font-family: Questrial;
 }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
+h2 {
+  display: inline-block;
+  margin: 2px;
+  font-size: 1.2rem;
+}
+
+ol {
+  list-style-position: inside;
+  font-size: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+i
+
+li {
+  padding: 5px;
+  margin: 5px;
+  height: 100px;
+  width: 200px;
 }
