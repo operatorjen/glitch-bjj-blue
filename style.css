@@ -2,26 +2,40 @@ body {
   padding: 10px;
   margin: 0;
   font-family: Questrial;
+  background-color: #111;
 }
 
 h2 {
   display: inline-block;
-  margin: 2px;
+  margin: 0 10px;
   font-size: 1.1rem;
+  line-height: 1.4rem;
 }
 
 ol {
-  list-style-position: inside;
-  font-size: 1.2rem;
+  list-style-type: none;
+  font-size: 1.1rem;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
+input[type="checkbox"] {
+  border: 2px solid #111;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+input[type="checked"
+
 li {
-  padding: 5px;
+  padding: 1px;
   margin: 5px;
   height: 100px;
   width: 200px;
+  background-color: rgba(200, 200, 210, 0.8);
 }
