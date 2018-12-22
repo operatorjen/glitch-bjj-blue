@@ -45,7 +45,7 @@ const POSITIONS = {
     media: false
   },
   5: {
-    name: 'Upa',
+    name: 'Upa (Bridge)',
     category: CATEGORIES.fundamentals,
     media: false
   },
