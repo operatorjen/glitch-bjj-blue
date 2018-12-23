@@ -17,6 +17,7 @@ for (let k in positions) {
   
   text.onblur = function (e) {
     meta = e.target.value.trim()
+    localStorage.setItem(`position_${k}`, meta)
   }
 
   ckbx.onclick = function (e) {
@@ -44,6 +45,7 @@ for (let k in positions) {
   // p.textContent = positions[k].category
   li.appendChild(ckbx)
   li.appendChild(h2)
+  li.appendChild(text)
   // li.appendChild(p)
   wrapper.appendChild(li)
 }

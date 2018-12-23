@@ -9,7 +9,11 @@ h2 {
   display: inline-block;
   margin: 0 10px;
   font-size: 1.1rem;
-  line-height: 1.4rem;
+  line-height: 1.3rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 260px;
 }
 
 ol {
@@ -42,10 +46,26 @@ input[type="checkbox"].on {
   border: 2px solid rgba(10, 10, 20, 0.63);
 }
 
+li.on textarea {
+  background-color: rgb(20, 150, 130);
+}
+
 li {
   padding: 3px;
   margin: 3px;
   height: 100px;
   width: 300px;
   background-color: rgba(200, 200, 210, 0.8);
+}
+
+textarea {
+  display: block;
+  width: 96%;
+  border: 0px;
+  padding: 2%;
+  resize: none;
+  overflow: auto;
+  height: 50px;
+  font-size: 0.9rem;
+  
 }
