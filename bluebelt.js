@@ -310,7 +310,7 @@ const POSITIONS = {
     media: false
   },
   58: {
-    name: 'Mata Leao',
+    name: 'Mata Leao (Rear Naked Choke)',
     category: CATEGORIES.backa,
     media: false
   },

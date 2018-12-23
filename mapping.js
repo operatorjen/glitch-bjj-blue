@@ -8,14 +8,18 @@ for (let k in positions) {
   let li = document.createElement('li')
   let h2 = document.createElement('h2')
   let ckbx = document.createElement('input')
+  let text = document.createElement('textarea')
   // let p = document.createElement('p')
   ckbx.type = 'checkbox'
   ckbx.id = `ck-${k}`
+  const meta = localStorage.getItem(`position_${k}`) || ''
+  text.value = meta
+
   ckbx.onclick = function (e) {
     const checked = e.target.checked || false
     
     if (checked) {
-      localStorage.setItem(`position_${k}`, true)
+      localStorage.setItem(`position_${k}`, meta)
       ckbx.checked = 'checked'
       ckbx.className = 'on'
       li.className = 'on'

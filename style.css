@@ -42,8 +42,8 @@ input[type="checkbox"].on {
 
 li {
   padding: 1px;
-  margin: 5px;
+  margin: 3px;
   height: 100px;
-  width: 200px;
+  width: 300px;
   background-color: rgba(200, 200, 210, 0.8);
 }
