@@ -12,8 +12,12 @@ for (let k in positions) {
   // let p = document.createElement('p')
   ckbx.type = 'checkbox'
   ckbx.id = `ck-${k}`
-  const meta = localStorage.getItem(`position_${k}`) || ''
+  let meta = localStorage.getItem(`position_${k}`) || ''
   text.value = meta
+  
+  text.onblur = function (e) {
+    meta = e.target.value.trim()
+  }
 
   ckbx.onclick = function (e) {
     const checked = e.target.checked || false
