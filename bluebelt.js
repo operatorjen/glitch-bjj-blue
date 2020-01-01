@@ -453,6 +453,11 @@ const POSITIONS = {
     name: 'Rear Choke Escape (Finger Point)',
     category: CATEGORIES.backd,
     media: false
+  },
+  86: {
+    name: 'Two-Handed Lapel Grab Defense',
+    category: CATEGORIES.standingd,
+    media: false
   }
 }
 
