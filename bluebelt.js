@@ -458,6 +458,11 @@ const POSITIONS = {
     name: 'Two-Handed Lapel Grab Defense',
     category: CATEGORIES.standingd,
     media: false
+  },
+  87: {
+    name: 'Armbar Protection from Guard Defense',
+    category: CATEGORIES.guardd,
+    media: false
   }
 }
 
