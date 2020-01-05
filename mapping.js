@@ -16,10 +16,10 @@ for (let k in positions) {
   let meta = localStorage.getItem(`position_${k}`) || ''
   text.value = meta
   output.push({
-    position: meta,
-    
+    position: positions[k].name,
+    details: meta
   })
-  
+
   text.onblur = function (e) {
     meta = e.target.value.trim()
     localStorage.setItem(`position_${k}`, meta)
@@ -54,5 +54,7 @@ for (let k in positions) {
   // li.appendChild(p)
   wrapper.appendChild(li)
 }
+
+console.log(JSON.stringify(output, null, 2))
 
 const checks = document.querySelectorAll('input[type="checkbox"]')
