@@ -2,6 +2,7 @@ const positions = getPositions()
 console.log(positions)
 
 const wrapper = document.querySelector('#wrapper')
+let output = []
 
 for (let k in positions) {
   positions[k].checked = false
@@ -14,6 +15,10 @@ for (let k in positions) {
   ckbx.id = `ck-${k}`
   let meta = localStorage.getItem(`position_${k}`) || ''
   text.value = meta
+  output.push({
+    position: meta,
+    
+  })
   
   text.onblur = function (e) {
     meta = e.target.value.trim()
